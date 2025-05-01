@@ -1,3 +1,5 @@
+import profilePic from "../../img/profile1.jpg";
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-white">
@@ -9,7 +11,7 @@ const AboutSection = () => {
               {/* Main profile image */}
                 <div className="absolute inset-0 rounded-tl-[20px] rounded-tr-[90px] rounded-bl-[90px] rounded-br-[20px] overflow-hidden border-8 border-white shadow-2xl z-10">
                 <img
-                  src="src/img/profile1.jpg"
+                  src={profilePic}
                   alt="Profile"
                   className="w-full h-full object-cover object-top"
                 />

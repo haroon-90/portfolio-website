@@ -1,4 +1,8 @@
 import ProjectCard from '../ui/ProjectCard';
+import bakeryImage from '../../img/bakery.png';
+import portfolioImage from '../../img/portfolio.png';
+import loginImage from '../../img/login.png';
+import React from 'react';
 
 const ProjectsSection = () => {
   const projects = [
@@ -6,7 +10,7 @@ const ProjectsSection = () => {
       id: 1,
       title: 'E-Commerce Website',
       description: 'The Sweet Tooth Bakery website is a visually appealing, user-friendly frontend design created using HTML and CSS.This project showcases a sleek, modern design for a bakery, highlighting their delicious offerings in an attractive and organized layout.The website focuses on simplicity,elegance, and functionality, making it easy for visitors to browse the bakery products, learn about the bakery story, and get in touch.',
-      image: 'src/img/bakery.png',
+      image: bakeryImage,
       tags: ['HTML', 'CSS', 'JavaScript'],
       demoLink: '#',
       codeLink: '#',
@@ -15,7 +19,7 @@ const ProjectsSection = () => {
       id: 2,
       title: 'Portfolio Website',
       description: 'A responsive portfolio website built with React and Tailwind CSS. Features smooth scrolling, responsive design, and contact form functionality.',
-      image: 'src/img/portfolio.png',
+      image: portfolioImage,
       tags: ['HTML', 'CSS', 'JavaScript'],
       demoLink: 'https://haroon90.w3spaces.com/',
       codeLink: 'https://github.com/haroon-90/Portfolio',
@@ -33,7 +37,7 @@ const ProjectsSection = () => {
       id: 4,
       title: 'Login Form',
       description: 'This is a sleek and responsive Login Form built using HTML & CSS. It features user-friendly input fields for email/username and password, along with a login button and a forgot password link. The design is fully responsive, ensuring a smooth user experience across all devices. The form can be easily customized with additional features like validation, animations, or dark mode to enhance functionality and aesthetics.',
-      image: 'src/img/login.png',
+      image: loginImage,
       tags: ['HTML', 'CSS', 'JavaScript'],
       demoLink: '#',
       codeLink: '#',
