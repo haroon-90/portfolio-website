@@ -1,17 +1,21 @@
 {
+  "homepage": "https://haroon-90.github.io/portfolio-website",
   "name": "portfolio-website",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "tsc -b && vite build --outDir dist",
-    "lint": "eslint src --fix && tsc --noEmit",
-    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "preview": "vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
+    "dist": "^0.1.2",
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwindcss-animate": "^1.0.7"
