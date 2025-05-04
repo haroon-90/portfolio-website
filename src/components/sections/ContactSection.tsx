@@ -20,30 +20,42 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setSubmitMessage('Your message has been sent successfully!');
-
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
+  
+    try {
+      const response = await fetch("https://formspree.io/f/mjkgpqne", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json'
+        }
       });
-
-      // Clear message after 5 seconds
+  
+      if (response.ok) {
+        setSubmitStatus('success');
+        setSubmitMessage('Your message has been sent successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      } else {
+        setSubmitStatus('error');
+        setSubmitMessage('Failed to send your message. Please try again later.');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      setSubmitMessage('An error occurred. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
       setTimeout(() => {
         setSubmitMessage('');
         setSubmitStatus('');
       }, 5000);
-    }, 1500);
+    }
   };
 
   return (
@@ -135,9 +147,7 @@ const ContactSection = () => {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} 
-                action="https://formspree.io/f/mjkgpqne"
-                method='POST'>
+              <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
