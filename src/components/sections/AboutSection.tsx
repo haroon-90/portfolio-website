@@ -8,7 +8,6 @@ const AboutSection = () => {
           {/* Profile Image */}
           <div className="w-full md:w-2/5 flex justify-center">
             <div className="relative w-64 h-64 lg:w-80 lg:h-80">
-              {/* Main profile image */}
                 <div className="absolute inset-0 rounded-tl-[20px] rounded-tr-[90px] rounded-bl-[90px] rounded-br-[20px] overflow-hidden border-8 border-white shadow-2xl z-10">
                 <img
                   src={profilePic}
@@ -18,11 +17,10 @@ const AboutSection = () => {
                 </div>
 
               {/* Decorative background circle */}
-              <div className="absolute -inset-4 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 opacity-20 blur-lg"></div>
+              <div className="absolute -inset-5 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 opacity-50 blur-lg"></div>
             </div>
           </div>
 
-          {/* About Content */}
           <div className="w-full md:w-3/5">
             <h2 className="text-3xl font-bold mb-2">About Me</h2>
             <div className="w-20 h-1 bg-blue-600 mb-6"></div>
