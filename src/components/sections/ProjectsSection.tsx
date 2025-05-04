@@ -64,6 +64,15 @@ const ProjectsSection = () => {
       demoLink: 'https://haroon-90.github.io/Weather-App/',
       codeLink: 'https://github.com/haroon-90/Weather-App',
     },
+    {
+      id: 7,
+      title: 'E-Commerce Website',
+      description: 'The Sweet Tooth Bakery website is a visually appealing, user-friendly frontend design created using HTML and CSS.This project showcases a sleek, modern design for a bakery, highlighting their delicious offerings in an attractive and organized layout.The website focuses on simplicity,elegance, and functionality, making it easy for visitors to browse the bakery products, learn about the bakery story, and get in touch.',
+      image: bakeryImage,
+      tags: ['HTML', 'CSS', 'JavaScript'],
+      demoLink: 'https://haroon-90.github.io/Sweet-Tooth-Bakery/',
+      codeLink: 'https://github.com/haroon-90/Sweet-Tooth-Bakery',
+    },
   ];
 
   return (
