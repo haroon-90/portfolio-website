@@ -1,4 +1,5 @@
 import profilePic from "../../img/profile1.jpg";
+import CV from "../../Muhammad_Haroon_Nawaz_(resume).pdf";
 
 const AboutSection = () => {
   return (
@@ -8,13 +9,13 @@ const AboutSection = () => {
           {/* Profile Image */}
           <div className="w-full md:w-2/5 flex justify-center">
             <div className="relative w-64 h-64 lg:w-80 lg:h-80">
-                <div className="absolute inset-0 rounded-tl-[20px] rounded-tr-[90px] rounded-bl-[90px] rounded-br-[20px] overflow-hidden border-8 border-white shadow-2xl z-10">
+              <div className="absolute inset-0 rounded-tl-[20px] rounded-tr-[90px] rounded-bl-[90px] rounded-br-[20px] overflow-hidden border-8 border-white shadow-2xl z-10">
                 <img
                   src={profilePic}
                   alt="Profile"
                   className="w-full h-full object-cover object-top"
                 />
-                </div>
+              </div>
 
               {/* Decorative background circle */}
               <div className="absolute -inset-5 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 opacity-50 blur-lg"></div>
@@ -53,7 +54,7 @@ const AboutSection = () => {
             </div>
 
             <a
-              href="#"
+              href={CV}
               className="inline-flex items-center mt-8 px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition duration-300"
               download
             >
