@@ -131,6 +131,11 @@ const ContactSection = () => {
                       <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
                     </svg>
                   </a>
+                  <a href="https://www.facebook.com/haroon.nawaz.144734" target='_blank' className="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition duration-300">
+                    <svg className="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 50 50" width="50px" height="50px" aria-hidden="true">
+                      <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
