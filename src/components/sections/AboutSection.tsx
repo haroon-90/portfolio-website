@@ -1,5 +1,5 @@
 import profilePic from "../../img/profile1.jpg";
-import CV from "../../Muhammad_Haroon_Nawaz_(resume).pdf";
+import CV from "../../MuhammadHaroonNawaz(Resume).pdf";
 
 const AboutSection = () => {
   return (
