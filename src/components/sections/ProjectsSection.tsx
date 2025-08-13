@@ -3,33 +3,60 @@ import bakeryImage from '../../img/bakery.png';
 import QuickQuizimg from '../../img/quickquiz.png';
 import portfolioImage from '../../img/portfolio.png';
 import taskifyimg from '../../img/taskify.png';
-import onenestimg from '../../img/onenest.png';
+import minixpressimg from '../../img/MiniXpress.png';
 import bolotohimg from '../../img/bolotoh.png';
-import Weatherimg from '../../img/weatherapp.png';
-import React from 'react';
+import lmsimg from '../../img/LMS.png';
+import passbinimg from '../../img/PassBin.png'
 
 const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'OneNest | All-in-one digital hub',
-      description: 'OneNest is your all-in-one digital hub designed for simplicity, speed, and productivity. Whether you have a student, developer, or productivity geek, OneNest brings together the tools you need — all in one place.',
-      image: onenestimg,
-      tags: ['HTML', 'CSS', 'JavaScript',  'React', 'Tailwind CSS', 'AI API'],
-      demoLink: 'https://haroon-90.github.io/OneNest/',
-      codeLink: 'https://github.com/haroon-90/OneNest',
+      title: 'MiniXpress | All-in-one digital hub',
+      description: 'MiniXpress is your all-in-one miltipage web application designed for simplicity, speed, and productivity. Whether you have a student, developer, or productivity geek, MiniXpress brings together the tools you need, all in one place.',
+      image: minixpressimg,
+      tags: ['React.js', 'JavaScript', 'Tailwind CSS', 'React-Router-dom', 'Lucides-react', 'Framer-motion', 'AI API'],
+      demoLink: 'https://haroon-90.github.io/MiniXpress/',
+      codeLink: 'https://github.com/haroon-90/MiniXpress',
     },
     {
       id: 2,
+      title: 'LMS (Learning Management System)',
+      description: 'This is a basic Learning Management System built using the MERN stack (MongoDB, Express.js, React.js, and Node.js). The application is designed to manage educational operations efficiently. It includes three distinct panels Student, Teacher, and Admin, each with specific access and functionality based on user roles. The system supports user authentication, course management, and role-based dashboards to ensure secure and organized interaction within the platform.',
+      image: lmsimg,
+      tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'react-icons', 'react-router-dom', 'toastify'],
+      demoLink: 'https://haroon-90.github.io/Weather-App/',
+      codeLink: 'https://github.com/haroon-90/Weather-App',
+    },
+    {
+      id: 3,
+      title: 'Passbin | password Manager',
+      description: 'Passbin is a web-based application that is specially designed to store passwords at safe place. It has two versions, one can store passwords locally in browser (not much secure), and other version can Securely store passwords in database (secure version).',
+      image: passbinimg,
+      tags: ['React.js', 'Tailwindcss', 'JavaScript', 'Express.js', 'MongoDB', 'Lordicon', 'toastify'],
+      demoLink: 'https://haroon-90.github.io/Passbin_local/',
+      codeLink: 'https://github.com/haroon-90/Passbin_local',
+    },
+    {
+      id: 4,
       title: 'BoloToh | AI Chatbot',
       description: 'BoloToh is a fun and creative web app where your words turn into magic! Just share a few things about yourself — like your name, age, favorite color, or your mood — and BoloToh will create a personalized Poem, Motivation, Roast, Story, Introduction, AI Advice',
       image: bolotohimg,
-      tags: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'AI API'],
+      tags: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS', 'AI API'],
       demoLink: 'https://haroon-90.github.io/BoloToh/',
       codeLink: 'https://github.com/haroon-90/BoloToh',
     },
     {
-      id: 3,
+      id: 5,
+      title: 'Taskify | TO-DO List App',
+      description: 'A React-based To-Do List application that allows users to add, edit, mark as complete, and delete tasks. This project demonstrates fundamental React concepts and state management for creating interactive user interfaces.',
+      image: taskifyimg,
+      tags: ['React', 'JavaScript', 'CSS', 'React.js', 'Tailwind CSS'],
+      demoLink: 'https://haroon-90.github.io/To-Do-React/',
+      codeLink: 'https://github.com/haroon-90/To-Do-React',
+    },
+    {
+      id: 6,
       title: 'QuickQuiz | AI Quiz Generator',
       description: 'QuickQuiz is an innovative AI Quiz Generator that allows users to create customized multiple-choice quizzes on any topic. Simply input a topic, and the AI will generate a quiz with questions and answers. Users can then take the quiz and receive instant feedback upon submission.',
       image: QuickQuizimg,
@@ -38,7 +65,7 @@ const ProjectsSection = () => {
       codeLink: 'https://github.com/haroon-90/QuickQuiz',
     },
     {
-      id: 4,
+      id: 7,
       title: 'Portfolio Website',
       description: 'A responsive portfolio website built with React and Tailwind CSS. Features smooth scrolling, responsive design, and contact form functionality.',
       image: portfolioImage,
@@ -47,25 +74,7 @@ const ProjectsSection = () => {
       codeLink: 'https://github.com/haroon-90/Portfolio',
     },
     {
-      id: 5,
-      title: 'Taskify | TO-DO List App',
-      description: 'A React-based To-Do List application that allows users to add, edit, mark as complete, and delete tasks. This project demonstrates fundamental React concepts and state management for creating interactive user interfaces.',
-      image: taskifyimg,
-      tags: ['React', 'JavaScript', 'CSS', 'React', 'Tailwind CSS'],
-      demoLink: 'https://haroon-90.github.io/To-Do-React/',
-      codeLink: 'https://github.com/haroon-90/To-Do-React',
-    },
-    {
-      id: 6,
-      title: 'Weather App',
-      description: 'This is a sleek and responsive Weather App built using HTML, CSS, and JavaScript. It fetches weather data from an API based on user input, providing current weather conditions, temperature, and other relevant information. The design is fully responsive, ensuring a smooth user experience across all devices.',
-      image: Weatherimg,
-      tags: ['HTML', 'CSS', 'JavaScript', 'weather API'],
-      demoLink: 'https://haroon-90.github.io/Weather-App/',
-      codeLink: 'https://github.com/haroon-90/Weather-App',
-    },
-    {
-      id: 7,
+      id: 8,
       title: 'E-Commerce Website',
       description: 'The Sweet Tooth Bakery website is a visually appealing, user-friendly frontend design created using HTML and CSS.This project showcases a sleek, modern design for a bakery, highlighting their delicious offerings in an attractive and organized layout.The website focuses on simplicity,elegance, and functionality, making it easy for visitors to browse the bakery products, learn about the bakery story, and get in touch.',
       image: bakeryImage,
@@ -94,7 +103,7 @@ const ProjectsSection = () => {
 
         <div className="text-center mt-12">
           <a
-            href="#"
+            href="#projects"
             className="px-8 py-3 rounded-lg border-2 border-gray-300 text-gray-700 font-medium hover:border-gray-400 hover:bg-gray-50 transition duration-300"
           >
             View All Projects

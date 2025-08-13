@@ -2,17 +2,19 @@ import SkillBar from '../ui/SkillBar';
 
 const SkillsSection = () => {
   const frontendSkills = [
-    { name: 'HTML', percentage: 95 },
+    { name: 'HTML', percentage: 90 },
     { name: 'CSS', percentage: 75 },
-    { name: 'JavaScript', percentage: 80 },
-    { name: 'React', percentage: 65 },
-    { name: 'Tailwind CSS', percentage: 85 },
+    { name: 'JavaScript', percentage: 70 },
+    { name: 'React', percentage: 75 },
+    { name: 'Tailwind CSS', percentage: 70 },
   ];
 
   const backendSkills = [
     { name: 'Node.js', percentage: 80 },
+    { name: 'Express.js', percentage: 70 },
     { name: 'Python', percentage: 75 },
     { name: 'C++', percentage: 70 },
+    { name: 'MongoDB', percentage: 70 },
   ];
 
   return (

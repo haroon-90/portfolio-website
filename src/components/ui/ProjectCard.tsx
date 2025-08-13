@@ -20,7 +20,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover transition duration-300 hover:scale-105"
+          className="w-full h-full object-cover object-top transition duration-300 hover:scale-105"
         />
       </div>
 
